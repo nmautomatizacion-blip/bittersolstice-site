@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Overpass API Mirror | Static snapshot</title>
+<style>
+body{font-family:"Courier New",monospace;background:#0b0d12;color:#d8dde3;padding:30px;max-width:760px;margin:auto;line-height:1.5;}
+h1{color:#ffb347;}
+a{color:#ffb347;}
+pre{background:#11151c;border:1px solid #1f242e;padding:14px;overflow-x:auto;}
+.note{color:#7d8695;font-style:italic;}
+</style>
+</head>
+<body>
+<h1>Overpass API · Static Mirror</h1>
+<p class="note">This endpoint serves a pinned snapshot of public
+OpenStreetMap data for the southern Carpathians (bbox 45.3,22.7,45.8,25.1),
+refreshed monthly from the main Overpass instance. Read-only.</p>
+
+<h3>Example query</h3>
+<p>Query path: <code>/api/interpreter?data=[out:json];node(around:200,45.5992,24.6134)["amenity"="shelter"];out meta;</code></p>
+
+<h3>Try it</h3>
+<ul>
+  <li><a href="/api/interpreter">/api/interpreter</a>
+      — returns the known hunter-shelter node in Făgăraș and its
+      full changeset history (add 2017, delete 2019).</li>
+</ul>
+
+<h3>Credits</h3>
+<p>Data © OpenStreetMap contributors, under ODbL.</p>
+
+<p class="note">Snapshot generated 2026-04-15.
+Full changeset JSON: /api/interpreter</p>
+
+</body>
+</html>

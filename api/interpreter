@@ -1,0 +1,64 @@
+{
+  "version": 0.6,
+  "generator": "Overpass API (mirror/static)",
+  "osm3s": {
+    "timestamp_osm_base": "2026-04-15T00:00:00Z",
+    "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
+  },
+  "elements": [
+    {
+      "type": "node",
+      "id": 5342818763,
+      "lat": 45.5991842,
+      "lon": 24.6134217,
+      "timestamp": "2019-12-22T10:14:07Z",
+      "version": 3,
+      "changeset": 76823451,
+      "user": "h_drambal",
+      "uid": 9318204,
+      "tags": {
+        "amenity": "shelter",
+        "shelter_type": "basic_hut",
+        "hunter_shelter": "yes",
+        "operator": "Alpinverein Brașov",
+        "ele": "1600",
+        "wheelchair": "no",
+        "_deleted": "true",
+        "_deleted_at": "2019-12-22T10:14:07Z"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5342818763,
+      "lat": 45.5991842,
+      "lon": 24.6134217,
+      "timestamp": "2017-06-14T19:32:51Z",
+      "version": 1,
+      "changeset": 49682113,
+      "user": "h_drambal",
+      "uid": 9318204,
+      "tags": {
+        "amenity": "shelter",
+        "shelter_type": "basic_hut",
+        "hunter_shelter": "yes",
+        "operator": "Alpinverein Brașov",
+        "ele": "1600"
+      }
+    },
+    {
+      "type": "way",
+      "id": 741829103,
+      "timestamp": "2019-12-22T10:14:07Z",
+      "version": 2,
+      "changeset": 76823451,
+      "user": "h_drambal",
+      "uid": 9318204,
+      "tags": {
+        "highway": "path",
+        "access": "destination",
+        "_deleted": "true"
+      }
+    }
+  ],
+  "remark": "Static snapshot. Refreshed 2026-04-15 from Overpass main. Full changeset history available at https://www.openstreetmap.org/changeset/76823451"
+}

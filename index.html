@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Cryptogram Collective | Independent Investigative Reporting</title>
+<meta name="description" content="Independent investigative reporting on corruption, transnational finance, and digital forensics.">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex,nofollow">
+<style>
+  :root {
+    --bg: #0b0d12;
+    --fg: #d8dde3;
+    --muted: #7d8695;
+    --accent: #ffb347;
+    --line: #1f242e;
+    --red: #e55;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: Georgia, "Times New Roman", serif;
+    background: var(--bg);
+    color: var(--fg);
+    line-height: 1.55;
+    font-size: 17px;
+  }
+  header {
+    padding: 28px 40px 12px;
+    border-bottom: 1px solid var(--line);
+    display: flex;
+    align-items: baseline;
+    gap: 24px;
+    flex-wrap: wrap;
+  }
+  header h1 {
+    margin: 0;
+    font-size: 26px;
+    letter-spacing: 2px;
+    font-weight: 600;
+  }
+  header h1 span { color: var(--accent); }
+  header .tag {
+    color: var(--muted);
+    font-size: 13px;
+    font-style: italic;
+  }
+  nav a {
+    color: var(--muted);
+    text-decoration: none;
+    margin-right: 18px;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  nav a:hover { color: var(--fg); }
+  main {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 40px 24px;
+  }
+  article h2 {
+    font-size: 28px;
+    margin: 0 0 10px;
+    line-height: 1.2;
+  }
+  article .meta {
+    color: var(--muted);
+    font-size: 13px;
+    margin-bottom: 28px;
+  }
+  article p { margin: 0 0 16px; }
+  article blockquote {
+    border-left: 3px solid var(--accent);
+    padding: 6px 16px;
+    color: var(--muted);
+    font-style: italic;
+    margin: 20px 0;
+  }
+  .dropbox {
+    border: 1px dashed var(--muted);
+    padding: 22px;
+    margin: 32px 0;
+    background: #11151c;
+  }
+  .dropbox h3 { margin: 0 0 10px; color: var(--accent); font-size: 18px; }
+  .dropbox code { color: var(--accent); word-break: break-all; }
+  .hint {
+    font-family: "Courier New", monospace;
+    font-size: 13px;
+    color: var(--muted);
+    background: #0f131a;
+    padding: 14px 16px;
+    border: 1px solid var(--line);
+    margin: 24px 0;
+  }
+  footer {
+    border-top: 1px solid var(--line);
+    padding: 24px 40px;
+    color: var(--muted);
+    font-size: 12px;
+    text-align: center;
+  }
+  .form-row { margin: 10px 0; }
+  .form-row label { display: block; color: var(--muted); font-size: 13px; margin-bottom: 4px; }
+  .form-row input, .form-row textarea {
+    width: 100%;
+    padding: 10px;
+    background: #0f131a;
+    border: 1px solid var(--line);
+    color: var(--fg);
+    font-family: inherit;
+    font-size: 14px;
+  }
+  button {
+    background: var(--accent);
+    color: #000;
+    border: none;
+    padding: 10px 20px;
+    font-weight: bold;
+    cursor: pointer;
+    font-family: inherit;
+  }
+  #drop-result {
+    margin-top: 16px;
+    padding: 14px;
+    border: 1px solid var(--accent);
+    background: #141a23;
+    display: none;
+    font-family: "Courier New", monospace;
+    font-size: 13px;
+    word-break: break-all;
+  }
+  .tag-row { margin-top: 32px; font-size: 12px; color: var(--muted); }
+  .tag-row span { margin-right: 14px; }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>CRYPTOGRAM <span>//</span> COLLECTIVE</h1>
+  <div class="tag">Independent investigative cryptanalysis. Since 2021.</div>
+  <nav style="margin-left: auto;">
+    <a href="#">Stories</a>
+    <a href="#drop">Secure Drop</a>
+    <a href="#">About</a>
+  </nav>
+</header>
+
+<main>
+<article>
+
+<h2>Bitter Solstice: An Auditor's 42 Frames</h2>
+<div class="meta">DROP OPEN · Updated April 2026 · Languages: EN / DE / RO</div>
+
+<p>In February 2026, a hunting party high in the southern Carpathians
+— not where the Austrian Alpenverein said he'd been — recovered a
+weatherproof camera case containing an Olympus TG-5 and a USB
+thumb drive. The owner: Hans Kirchmayer, a forensic accountant
+declared dead on a "solo winter ascent" more than six years earlier.
+His sister Lena reached out to us with the material in March.
+We're opening the drop.</p>
+
+<blockquote>
+"The police there are part of it. Please — find out where he really was,
+when he really stopped, and who wanted him to stop."
+— Lena Kirchmayer, Vienna, 2026-03
+</blockquote>
+
+<p>We will not publish our own analysis until we've had enough eyes
+on the raw material. Hans left 42 frames; three of them have GPS
+tags that are mutually inconsistent with the camera's own internal
+sensor timestamps. The official track log (Alpenverein Brașov) is
+included alongside for comparison.</p>
+
+<p>The USB thumb drive contained a single encrypted file
+(<code>dossier.enc</code>, AES-256-CBC, OpenSSL format). Hans left a
+note saying the password was <em>"where and when I last looked up"</em>.
+We believe the answer lives inside the 42 frames. That, reader, is
+your part.</p>
+
+<div class="dropbox" id="drop">
+  <h3>SECURE DROP · bitter solstice</h3>
+  <p style="margin: 0 0 14px; color: var(--muted); font-size: 14px;">
+    Leave an email — we will reply only if we've opened the dossier and
+    need a corroborating pair of eyes. Or skip the form: the entry
+    point to the evidence is public, anonymous, and cached on IPFS.
+  </p>
+  <form onsubmit="return openDrop(event);">
+    <div class="form-row">
+      <label>EMAIL (optional)</label>
+      <input type="email" name="email" placeholder="you@securemail.invalid">
+    </div>
+    <div class="form-row">
+      <label>NOTE</label>
+      <textarea rows="3" name="note" placeholder="Tell us what you found, nothing else."></textarea>
+    </div>
+    <button type="submit">REQUEST DROP</button>
+  </form>
+  <div id="drop-result"></div>
+</div>
+
+<div class="hint">
+# entry point (append to any IPFS gateway of your choice)
+/ipfs/bafybeihwir55qgewx2xpwshqwgzv6pc2fh37wo4sxaciqll7dumo3236ey/
+#
+# DNS side-channel for the dossier:
+#   $ dig +short TXT _entry.bittersolstice.site
+#   $ dig +short TXT _hint.bittersolstice.site
+#   $ dig +short TXT _sha256.bittersolstice.site
+#   $ dig +short TXT _dossier_cid.bittersolstice.site
+</div>
+
+<p><strong>What we know:</strong></p>
+<ul>
+  <li>Hans vanished on or around 2019-12-21.</li>
+  <li>The Austrian Alpenverein in Brașov filed his last ping as
+      the Pietrele hut in Retezat at 18:04 UTC that day.</li>
+  <li>His camera was recovered 260 kilometres east of that location.</li>
+  <li>Three frames (IMG_0007, IMG_0012, IMG_0021) show a GPS position
+      matching Retezat. The others contradict it.</li>
+  <li>The foundation's director, who registered Hans's ascent,
+      has a public OpenStreetMap account. He edited it on 2019-12-22
+      at 10:14 UTC — the day after Hans stopped transmitting.</li>
+</ul>
+
+<p><strong>What we're asking:</strong> reconstruct where Hans actually was
+at 19:47 UTC on December 21, 2019. When you find the coordinates and
+the exact four-digit UTC time, derive the password for the dossier in
+the format <code>LAT-LON-HHMM</code> (five decimals each, UTC without
+a colon). OpenSSL AES-256-CBC with <code>-pbkdf2 -iter 100000</code>.
+The flag is inside.</p>
+
+<p class="tag-row">
+<span>#osint</span>
+<span>#geoint</span>
+<span>#carpathians</span>
+<span>#alpinverein</span>
+<span>#solstice</span>
+</p>
+
+</article>
+</main>
+
+<footer>
+  CRYPTOGRAM COLLECTIVE &middot; cryptogram-collective[.]invalid &middot;
+  PGP fingerprint advertised via DNS TXT &middot; No trackers, no fonts from
+  third parties, no javascript phoning home.<br>
+  This page is signed by the dossier hash: see
+  <code>_sha256.bittersolstice.site</code>.
+</footer>
+
+<script>
+function openDrop(e){
+  e.preventDefault();
+  var d = document.getElementById('drop-result');
+  d.style.display = 'block';
+  d.innerHTML = '[+] drop acknowledged.<br>' +
+    '    entry-point CID: bafybeihwir55qgewx2xpwshqwgzv6pc2fh37wo4sxaciqll7dumo3236ey<br>' +
+    '    suggested gateway: https://ipfs.io/ipfs/bafybeihwir55qgewx2xpwshqwgzv6pc2fh37wo4sxaciqll7dumo3236ey/<br>' +
+    '    dossier CID: bafkreiesizu7wg5hngxrshnrerpzqn456iab7554kfpfjhwxa5vgahouue<br>' +
+    '    hint: dig +short TXT _hint.bittersolstice.site';
+  return false;
+}
+</script>
+
+</body>
+</html>
